@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styl.css">
+	<title>Arithmetic fallout</title>
+</head>
+<body>
+		<div id="game">	
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+		    			<canvas width='480' height='500' id="gameCanvas"></canvas>
+					</td>
+					<td class="actionPanel">
+						<div id="scorePanel">Score: <span id="score">0</span></div>
+						<div class="display"><input type="text" readonly size="18" id="puzzleResult"></div>
+						<p>
+							<input type="button" class="button black" value="7" onclick='addKeyVal("7")'>
+							<input type="button" class="button black" value="8" onclick='addKeyVal("8")'>
+					     	<input type="button" class="button black" value="9" onclick='addKeyVal("9")'>
+					     </p>
+					     <p>
+					     	<input type="button" class="button black" value="4" onclick='addKeyVal("4")'>
+					     	<input type="button" class="button black" value="5" onclick='addKeyVal("5")'>
+					    	<input type="button" class="button black" value="6" onclick='addKeyVal("6")'>    
+					    </p>
+					    <p>
+					    	<input type="button" class="button black" value="1" onclick='addKeyVal("1")'>
+					    	<input type="button" class="button black" value="2" onclick='addKeyVal("2")'>
+					    	<input type="button" class="button black" value="3" onclick='addKeyVal("3")'>
+					    </p>
+					    <p>
+					    	<input type="button" class="button black" value="0" onclick='addKeyVal("0")'>
+					    	<input type="button" class="button gray" value="Clear" onclick='clearVal()'>
+					    	<input type="button" class="button orange" value="Enter" onclick='validateVal()'>    	
+					    </p>
+		    		</td>	    		
+				</tr>
+			</table>
+		</div>
+		<!-- <div id="footer">
+			<p>
+				Best viewed on <strong>-webkit- </strong> and <strong>-moz-</strong> supported browsers.
+			</p>
+		</div>		 -->
+		<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="jquery.hotkeys.js"></script>		
+		<script type="text/javascript" src="main.js"></script>
+		<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			  ga('create', 'UA-40434201-2', 'anujverma000.github.io');
+			  ga('send', 'pageview');
+			
+		</script>
+		<!-- AddThis Smart Layers BEGIN -->
+		<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53425ce4116c69f9"></script>
+		<script type="text/javascript">
+		  addthis.layers({
+		    'theme' : 'transparent',
+		    'share' : {
+		      'position' : 'left',
+		      'numPreferredServices' : 5
+		    }, 
+		    'follow' : {
+		      'services' : [
+		        {'service': 'facebook', 'id': 'anujverma000'},
+		        {'service': 'twitter', 'id': 'anujverma000'},
+		        {'service': 'linkedin', 'id': 'anujverma000'}
+		      ]
+		    }   
+		  });
+		</script>	
+</body>
+</html>
